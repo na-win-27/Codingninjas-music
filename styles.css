@@ -1,0 +1,252 @@
+:root {
+    --primary-color: #1ed760;
+    --secondary-color: #fff;;
+    --font-color: #424242;
+    --heading-color: #292922;
+}
+
+[data-theme="dark"] {
+    --primary-color: #1ed760;
+    --secondary-color: #191414;;
+    --font-color: #e1e1ff;
+    --heading-color: #818cab;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:var( --secondary-color);
+    color: var(--font-color);
+}
+h1{
+    color:var( --heading-color);
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+.app-container {
+    width: 90%;
+    margin: 20px 20px;
+    background-color: var( --secondary-color);
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.all-songs {
+    width: 300px;
+    margin: 10px;
+}
+
+
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#genre-filter {
+    padding: 8px;
+    font-size: 1rem;
+}
+
+.song-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.song-item {
+    margin-top: 10px;
+    background-color: #1ed760;
+    margin-bottom: 10px;
+    color: #191414;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.song-item h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.song-item p {
+    margin: 8px 0 0;
+    font-size: 1rem;
+    color: #191414;
+}
+
+
+
+
+#asrc{
+    margin: 30px 10px;
+}
+
+.currently-playing-section {
+    display: flex;
+    margin: auto;
+    max-height: 380px;
+    background-color: #1DB954;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #191414;
+    flex-direction: column;
+    width: 500px;
+}
+
+.song-info {
+    flex: 1;
+    text-align: center;
+}
+
+.song-cover {
+    width: 100px;
+    height: 100px;
+    max-width: 150px;
+    border-radius: 8px;
+}
+
+.song-title {
+    font-size: 1.5rem;
+    margin: 5px 0;
+}
+
+.artist-name {
+    font-size: 1rem;
+    margin: 0;
+    color: #191414;
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+button {
+    background-color: #228B22;
+    color: #191414;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #1a5276;
+}
+
+
+
+.playlist-section {
+    background-color: #1DB954;/* Dark Blue Background */
+    color: #191414;  /* White Text Color */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    text-align: center;
+}
+
+h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.playlist-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.playlist-list li {
+    background-color:#228B22;
+    font-size: 1.2rem;
+    margin: 8px 0;
+    cursor: pointer;
+}
+
+.playlist-list li:hover {
+    text-decoration: underline;
+    background-color: #1DB954;
+}
+
+.create-playlist {
+    margin-top: 20px;
+}
+
+#createPlaylistBtn {
+    background-color: #1DB954; /* Blue Button Color */
+    color: #191414;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#createPlaylistBtn:hover {
+    background-color: #1DB954;  /* Slightly Darker Blue on Hover */
+}
+
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.theme-toggle {
+    display: flex;
+    align-items: center;
+}
+
+.theme-toggle label {
+    margin-right: 5px;
+}
+
+.main {
+    margin-top: 20px;
+}
+
+.music-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.playlist-item{
+    background-color: var(--font-color);
+}
+
+
+
+/* Add more styles for dark theme as needed */
+button {
+    background-color: #228B22;
+    color: #191414;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #1a5276;
+}
+

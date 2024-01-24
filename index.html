@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <!-- <script type="text/javascript" src="./app.js"></script> -->
+    <title>Music App</title>
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1 >Music App</h1>
+            <div class="theme-toggle">
+                <label for="theme-switch">Toggle Theme</label>
+                <input type="checkbox" id="theme-switch">
+            </div>
+        </header>
+
+        <main>
+            <div class="container">
+                <div class="all-songs">
+                <label for="genre-filter">Filter by Genre:</label>
+                <select id="genre-filter">
+                    <option value="all">All Genres</option>
+                    <option value="rock">Rock</option>
+                    <option value="pop">Pop</option>
+                    <option value="hip-hop">Hip Hop</option>
+                    <!-- Add more genres as needed -->
+                </select>
+        
+                <ul class="song-list" id="songList">
+                    <!-- Song items will be dynamically added here -->
+                </ul>
+            </div>
+
+            <div class="currently-playing-section">
+                <div id="song-info" class="song-info">
+                    <h3>Now Playing</h3>
+                    <img id="song-img"  src="./assets/images/1.jpeg" alt="Song Cover" class="song-cover">
+                    <p  id="song-title" class="song-title">Song Title</p>
+                    <p id="song-artist" class="artist-name">Artist Name</p>
+                </div>
+                <div class="controls">
+                    <audio autoplay id="asrc" controls  src="./assets/songs/1.mp3" >
+                        <!-- <source id="asrc"type="audio/mpeg">
+                        Your browser does not support the audio element. -->
+                      </audio>
+                    <button id="prev" class="previous-btn">&#9664;</button>
+                   
+                    <button  id="next" class="next-btn">&#9654;</button>
+                </div>
+                <button id="addToPlaylist" class="add-to-playlist-btn">Add to Playlist</button>
+            </div>
+
+            <div class="playlist-section">
+
+                <div class="create-playlist">
+                    <input type="text" id="newPlaylistInput" placeholder="Enter playlist name">
+                    <button id="createPlaylistBtn">Create Playlist</button>
+                </div>
+
+            
+                <h3>Current Playlist</h3>
+                <div id="CurrentPlaylist" class="playlist-list">
+                    <ul class="current-playlist-list" id="current-playlist-List">
+                        
+                    </ul>
+                </div>
+
+                <h3>Playlists</h3>
+                <div id="playlist" class="playlist-list">
+                    <ul class="playlist-list" id="playlist-List">
+                        
+                    </ul>
+                </div>
+                
+            </div>
+            </div>
+        
+        </main>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
